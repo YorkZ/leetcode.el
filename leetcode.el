@@ -1206,7 +1206,7 @@ Call `leetcode-solve-problem' on the current problem id."
          (slug-title (leetcode--slugify-title title))
          (title-with-suffix (concat slug-title suffix)))
     (if leetcode-save-solutions
-        (format "%04d_%s" (leetcode--get-problem-id slug-title) title-with-suffix)
+        (format "%d_%s" (leetcode--get-problem-id slug-title) title-with-suffix)
       title-with-suffix)))
 
 (defun leetcode--get-code-buffer (buf-name)
